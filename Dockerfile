@@ -1,8 +1,8 @@
 FROM debian:jessie
 RUN apt-get update && \
     apt-get -y install wget zsh-common zsh && \
-    wget "http://ftp.jp.debian.org/debian/pool/main/z/zsh/zsh-static_5.2.3_amd64.deb" && \
-    dpkg -i zsh-static_5.2.3_amd64.deb
+    wget "http://ftp.de.debian.org/debian/pool/main/z/zsh/zsh-static_5.2-3_amd64.deb" && \
+    dpkg -i zsh-static_5.2-3_amd64.deb
 
 RUN echo '#!/bin/sh\n\
 if mountpoint -q /target; then\n\
